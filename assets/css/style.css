@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/leaves-pattern.png");
+  background: url("../images/concrete_seamless.png");
 }
 
 * {
@@ -53,7 +53,7 @@ h3 {
 /* header */
 
 #masthead {
-  position: absolute;
+  position: fixed;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -220,70 +220,44 @@ input[type=submit] {
 /* Width at 980px and below */
 
 @media screen and (max-width: 980px) {
-  body {
-    background-color: #333;
-  }
-
-  .wrapper {
-    /* Box-model */
-    width: 100%;
-    padding: 20px;
-  }
-
   .main-section 
   {
-   width: 75%;
-  
+   width: 65%;
+   margin-left: 5%; 
   
   }
 
+  .work {
+    position: relative;
+    
+    width: 46%;
+    
+  }
   
 }
 
 
 /* Width at 768px and below */
 @media screen and (max-width: 768px) {
-  body {
-    background-color: #333;
-  }
-
-  .wrapper {
-    /* Box-model */
-    width: 100%;
-    padding: 20px;
-  }
-
   .main-section
   {
-    width: 100%;
+    width: 94%;
+    margin-left: 3%;
+   
     
   }
 
-  
+  nav a {
+    padding-right: 5px;
+    margin-right: 5px;
+  }
 
   
 }
 
 /* Width at 640px and below */
 @media screen and (max-width: 640px) {
-  body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-  }
-
-  .wrapper {
-    /* Box-model */
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .main-section
-  {
-    width: 100%;
-
-  }
+  
 
   #logo {
     width: 100%;
@@ -291,11 +265,11 @@ input[type=submit] {
 
   nav {
     float: none;
-    text-align: center;
     width: 100%;
+    text-align: center;
   }
   #main-container {
-    padding-top: 65px;
+    padding-top: 3%;
   }
   #masthead {
     position: static;
@@ -307,6 +281,13 @@ input[type=submit] {
     height: auto;
     margin-top: 10px;
     margin-right: 25px;
+  }
+
+  .work {
+    position: relative;
+    
+    width: 100%;
+    
   }
   
 }
